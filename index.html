@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princy | Full-Stack Engineer & Designer</title>
+    <meta name="description" content="Personal developer portfolio of Princy, a Full-Stack Engineer specializing in high-performance web applications, interactive UIs, and cloud architecture with a sleek, tech-visual aesthetic.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Grid Overlay Background -->
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header / Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-tag">&lt;</span>PRINCY<span class="logo-tag"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link"><span>01.</span> About</a></li>
+                    <li><a href="#skills" class="nav-link"><span>02.</span> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><span>03.</span> Projects</a></li>
+                    <li><a href="#contact" class="nav-link"><span>04.</span> Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="#" class="btn btn-outline btn-sm resume-btn">
+                        <i data-lucide="file-text"></i> Resume
+                    </a>
+                </div>
+            </nav>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Terminal Typing Effect -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="terminal-window reveal" id="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">guest@princy-dev: ~</div>
+                        <div class="terminal-action-icons">
+                            <i data-lucide="terminal" size="14"></i>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <!-- Content injected via JavaScript -->
+                        <div class="terminal-line"><span class="prompt">guest@princy-dev:~$</span> <span class="typed-command" id="cmd-1"></span></div>
+                        <div class="terminal-output" id="output-1"></div>
+                        <div class="terminal-line" id="line-2" style="display: none;"><span class="prompt">guest@princy-dev:~$</span> <span class="typed-command" id="cmd-2"></span></div>
+                        <div class="terminal-output" id="output-2"></div>
+                        <div class="terminal-line" id="line-3" style="display: none;"><span class="prompt">guest@princy-dev:~$</span> <span class="typed-command" id="cmd-3"></span></div>
+                        <div class="terminal-output" id="output-3"></div>
+                        <div class="terminal-line" id="line-cursor" style="display: none;"><span class="prompt">guest@princy-dev:~$</span> <span class="cursor">_</span></div>
+                    </div>
+                </div>
+                
+                <div class="hero-fallback-cta reveal">
+                    <p class="hero-subtitle">Let's build something exceptional together.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <h3>Hi, I'm Princy 👋</h3>
+                        <p class="lead-text">I am a passionate software engineer specializing in building high-performance web applications, interactive user interfaces, and scalable architectures.</p>
+                        <p>With an eye for design and a love for rigorous backend engineering, I bridge the gap between creative visual layouts and clean, modular code. I enjoy exploring the intersection of modern front-end frameworks, real-time networking, and cloud services.</p>
+                        <p>When I'm not writing code, you can find me reading about systems engineering, building custom visual art layouts with CSS/Canvas, or contributing to open-source software libraries.</p>
+                        
+                        <div class="sys-info-card">
+                            <div class="sys-info-header">
+                                <i data-lucide="cpu" class="sys-icon"></i>
+                                <span>SYSTEM_DIAGNOSTICS.EXE</span>
+                            </div>
+                            <div class="sys-info-body">
+                                <div class="sys-row">
+                                    <span class="sys-label">Current Role:</span>
+                                    <span class="sys-val accent-cyan">Full-Stack Developer</span>
+                                </div>
+                                <div class="sys-row">
+                                    <span class="sys-label">Experience:</span>
+                                    <span class="sys-val">3+ Years Engineering</span>
+                                </div>
+                                <div class="sys-row">
+                                    <span class="sys-label">Focus Area:</span>
+                                    <span class="sys-val accent-purple">Interactive Web Apps & API Design</span>
+                                </div>
+                                <div class="sys-row">
+                                    <span class="sys-label">Location:</span>
+                                    <span class="sys-val">Remote / India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-graphic-container reveal">
+                        <!-- Abstract Tech Circuit Graphic -->
+                        <div class="tech-graphic">
+                            <svg viewBox="0 0 400 400" width="100%" height="100%" class="svg-circuit" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="cyan-purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--accent-cyan)" />
+                                        <stop offset="100%" stop-color="var(--accent-purple)" />
+                                    </linearGradient>
+                                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feGaussianBlur stdDeviation="8" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Background Circles -->
+                                <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(0, 242, 254, 0.05)" stroke-width="2" stroke-dasharray="5 5" class="rot-clockwise" />
+                                <circle cx="200" cy="200" r="110" fill="none" stroke="rgba(112, 0, 255, 0.08)" stroke-width="1.5" class="rot-counter" />
+                                <circle cx="200" cy="200" r="70" fill="none" stroke="url(#cyan-purple-grad)" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="10 15" class="rot-clockwise-slow" />
+                                
+                                <!-- Core Node -->
+                                <circle cx="200" cy="200" r="24" fill="var(--bg-secondary)" stroke="url(#cyan-purple-grad)" stroke-width="3" filter="url(#glow)" class="core-glow" />
+                                <polygon points="194,204 200,192 206,204" fill="var(--accent-cyan)" class="core-symbol" />
+                                
+                                <!-- Nodes & Connecting Lines -->
+                                <!-- Line 1 -->
+                                <path d="M 200,90 L 200,50 L 290,50" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="0" class="path-anim" />
+                                <circle cx="290" cy="50" r="6" fill="var(--accent-cyan)" filter="url(#glow)" class="node-pulse" />
+                                
+                                <!-- Line 2 -->
+                                <path d="M 120,150 L 70,150 L 50,220" fill="none" stroke="var(--accent-purple)" stroke-width="2" class="path-anim" />
+                                <circle cx="50" cy="220" r="6" fill="var(--accent-purple)" filter="url(#glow)" class="node-pulse" style="animation-delay: -1s;" />
+                                
+                                <!-- Line 3 -->
+                                <path d="M 280,250 L 330,250 L 350,180" fill="none" stroke="var(--accent-cyan)" stroke-width="2" class="path-anim" />
+                                <circle cx="350" cy="180" r="6" fill="var(--accent-cyan)" filter="url(#glow)" class="node-pulse" style="animation-delay: -2s;" />
+                                
+                                <!-- Line 4 -->
+                                <path d="M 150,290 L 150,340 L 240,340" fill="none" stroke="var(--accent-green)" stroke-width="2" class="path-anim" />
+                                <circle cx="240" cy="340" r="6" fill="var(--accent-green)" filter="url(#glow)" class="node-pulse" style="animation-delay: -3s;" />
+                                
+                                <!-- Inner Node lines -->
+                                <line x1="200" y1="200" x2="200" y2="90" stroke="rgba(0, 242, 254, 0.4)" stroke-dasharray="4 4" />
+                                <line x1="200" y1="200" x2="120" y2="150" stroke="rgba(112, 0, 255, 0.4)" stroke-dasharray="4 4" />
+                                <line x1="200" y1="200" x2="280" y2="250" stroke="rgba(0, 242, 254, 0.4)" stroke-dasharray="4 4" />
+                                <line x1="200" y1="200" x2="150" y2="290" stroke="rgba(57, 255, 20, 0.4)" stroke-dasharray="4 4" />
+                                
+                                <!-- floating bits of data -->
+                                <g class="floating-data">
+                                    <text x="310" y="42" fill="var(--accent-cyan)" font-size="10" font-family="JetBrains Mono">npm install</text>
+                                    <text x="20" y="240" fill="var(--accent-purple)" font-size="10" font-family="JetBrains Mono">API_OK 200</text>
+                                    <text x="310" y="270" fill="var(--text-muted)" font-size="9" font-family="JetBrains Mono">import React</text>
+                                    <text x="210" y="360" fill="var(--accent-green)" font-size="10" font-family="JetBrains Mono">git push origin main</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section-padding" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title"><span class="section-num">02.</span> Technical Arsenal</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-wrapper">
+                    <!-- Tab Buttons / Controls -->
+                    <div class="skills-categories reveal">
+                        <button class="skill-cat-btn active" data-category="all">
+                            <i data-lucide="layout-grid"></i> All Stack
+                        </button>
+                        <button class="skill-cat-btn" data-category="frontend">
+                            <i data-lucide="monitor"></i> Frontend
+                        </button>
+                        <button class="skill-cat-btn" data-category="backend">
+                            <i data-lucide="database"></i> Backend
+                        </button>
+                        <button class="skill-cat-btn" data-category="tools">
+                            <i data-lucide="terminal"></i> Tools & Cloud
+                        </button>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="skills-grid reveal">
+                        <!-- Frontend Skills -->
+                        <div class="skill-badge frontend" data-stack="frontend">
+                            <i data-lucide="file-code-2" class="skill-icon text-cyan"></i>
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-badge frontend" data-stack="frontend">
+                            <i data-lucide="braces" class="skill-icon text-cyan"></i>
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-badge frontend" data-stack="frontend">
+                            <i data-lucide="atom" class="skill-icon text-cyan"></i>
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-badge frontend" data-stack="frontend">
+                            <i data-lucide="palette" class="skill-icon text-cyan"></i>
+                            <span class="skill-name">TailwindCSS</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        
+                        <!-- Backend Skills -->
+                        <div class="skill-badge backend" data-stack="backend">
+                            <i data-lucide="server" class="skill-icon text-purple"></i>
+                            <span class="skill-name">Node.js / Express</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-badge backend" data-stack="backend">
+                            <i data-lucide="file-code" class="skill-icon text-purple"></i>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-badge backend" data-stack="backend">
+                            <i data-lucide="database" class="skill-icon text-purple"></i>
+                            <span class="skill-name">MongoDB / SQL</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-badge backend" data-stack="backend">
+                            <i data-lucide="network" class="skill-icon text-purple"></i>
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+
+                        <!-- Tools & Cloud Skills -->
+                        <div class="skill-badge tools" data-stack="tools">
+                            <i data-lucide="git-branch" class="skill-icon text-green"></i>
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-badge tools" data-stack="tools">
+                            <i data-lucide="cloud" class="skill-icon text-green"></i>
+                            <span class="skill-name">AWS Services</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-badge tools" data-stack="tools">
+                            <i data-lucide="container" class="skill-icon text-green"></i>
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-badge tools" data-stack="tools">
+                            <i data-lucide="cpu" class="skill-icon text-green"></i>
+                            <span class="skill-name">CI/CD Pipelines</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section-padding" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title"><span class="section-num">03.</span> Featured Releases</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal" data-color="cyan">
+                        <div class="project-card-header">
+                            <div class="project-card-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="project-card-tab">synthetix-ai.app</div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-mockup">
+                                <div class="mockup-pattern grad-cyan-purple">
+                                    <i data-lucide="sparkles" class="mockup-icon"></i>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Synthetix AI</h3>
+                            <p class="project-desc">A generative AI playground for artists and writers. Integrates OpenAI APIs to dynamically produce structured layouts, written drafts, and vector graphics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Tailwind</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Princy2129/synthetix-ai" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal" data-color="purple">
+                        <div class="project-card-header">
+                            <div class="project-card-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="project-card-tab">devterminal.sh</div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-mockup">
+                                <div class="mockup-pattern grad-purple-green">
+                                    <i data-lucide="terminal" class="mockup-icon"></i>
+                                </div>
+                            </div>
+                            <h3 class="project-title">DevTerminal</h3>
+                            <p class="project-desc">A web-based customizable developer terminal emulator. Simulates basic shell commands, filesystem browsing, and custom theme overrides using JSON configs.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vanilla JS</span>
+                                <span class="tech-tag">CSS Grid</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">Web Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Princy2129/dev-terminal" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal" data-color="green">
+                        <div class="project-card-header">
+                            <div class="project-card-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="project-card-tab">quantflow.io</div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-mockup">
+                                <div class="mockup-pattern grad-green-cyan">
+                                    <i data-lucide="line-chart" class="mockup-icon"></i>
+                                </div>
+                            </div>
+                            <h3 class="project-title">QuantFlow</h3>
+                            <p class="project-desc">A lightweight financial data dashboard rendering crypto trends and stocks. Features instant updates using WebSockets and highly customizable Chart.js integrations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">WebSocket API</span>
+                                <span class="tech-tag">CSS Modules</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Princy2129/quant-flow" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title"><span class="section-num">04.</span> Ping Server</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card reveal">
+                        <h3 class="contact-title">Let's Establish a Connection</h3>
+                        <p class="contact-desc">My terminal is always listening. If you want to discuss a potential project, collaborate on open-source code, or just talk tech, feel free to drop a line.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon text-cyan"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:princy.dev@example.com" class="contact-val">princy.dev@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon text-purple"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-val">Remote / India (UTC+5:30)</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="coffee" class="contact-icon text-green"></i>
+                                <div>
+                                    <span class="contact-label">Availability</span>
+                                    <span class="contact-val">Open to Freelance & Roles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container reveal">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <div class="input-wrapper">
+                                        <i data-lucide="user" class="input-icon"></i>
+                                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="input-wrapper">
+                                        <i data-lucide="at-sign" class="input-icon"></i>
+                                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="file-question" class="input-icon"></i>
+                                    <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Detail your project requirements here..."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full submit-btn">
+                                <span>Send Packet</span> <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Princy. Built with pure HTML/CSS/JS.</p>
+                <div class="server-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SYSTEM STATUS: OPERATIONAL</span>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <ul class="social-links">
+                    <li><a href="https://github.com/Princy2129" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i data-lucide="twitter"></i></a></li>
+                    <li><a href="mailto:princy.dev@example.com" aria-label="Email"><i data-lucide="mail"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
