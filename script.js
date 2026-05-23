@@ -118,12 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const fallbackCta = document.querySelector('.hero-fallback-cta');
 
     const commands = {
-        cmd1Text: 'cat bio.md',
-        output1Text: `I am a full-stack engineer and designer specialized in high-performance web applications and interactive visual designs. I bridge the gap between frontend aesthetics and clean backend logic.`,
+        cmd1Text: 'cat about_me.md',
+        output1Text: `I am an AI/ML Engineer, Data Scientist, and Quantitative Analytics enthusiast. Currently pursuing an M.Sc. in Data Science at DIAT Pune, I specialize in building end-to-end ML pipelines, computer vision tracking models, and quantitative derivatives pricing frameworks.`,
         cmd2Text: 'skills --top',
-        output2Text: `[ "React", "Node.js", "Python", "Docker", "AWS", "Git" ]`,
-        cmd3Text: 'ping -c 3 princy-server.local',
-        output3Text: `64 bytes from princy-server (127.0.0.1): icmp_seq=1 ttl=64 time=0.12ms\n64 bytes from princy-server (127.0.0.1): icmp_seq=2 ttl=64 time=0.08ms\n64 bytes from princy-server (127.0.0.1): icmp_seq=3 ttl=64 time=0.09ms\n\n--- princy-server.local ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, time 2002ms`
+        output2Text: `[ "PyTorch", "Scikit-Learn", "LangGraph", "YOLOv8", "ARIMA/Prophet", "Black-Scholes" ]`,
+        cmd3Text: 'python -c "from quantdesk import pricing; pricing.simulate_mc()"',
+        output3Text: `[i] Stabilizing implied volatility solver (Newton-Raphson + Bisection)...\n[+] Convergence reached in 4 iterations. Implied Volatility: 24.87%\n[+] Running 10,000 Monte Carlo paths for portfolio risk simulation...\n[+] Computation complete. VaR (95%): -1.84% | Expected Shortfall: -2.31%`
     };
 
     function typeWriter(element, text, speed, callback) {

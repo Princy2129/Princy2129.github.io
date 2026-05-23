@@ -647,6 +647,105 @@ img, svg {
 .accent-purple { color: var(--accent-purple); text-shadow: 0 0 10px rgba(112, 0, 255, 0.2); }
 .accent-green { color: var(--accent-green); text-shadow: 0 0 10px rgba(57, 255, 20, 0.2); }
 
+/* Internship timeline styles */
+.experience-block {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.experience-block-title {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+}
+
+.timeline-item:nth-child(2)::before {
+    background-color: var(--accent-purple);
+    box-shadow: var(--glow-purple);
+}
+
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.timeline-role {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.timeline-org {
+    color: var(--accent-cyan);
+    font-weight: 500;
+}
+
+.timeline-item:nth-child(2) .timeline-org {
+    color: var(--accent-purple);
+}
+
+.timeline-date {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.timeline-details {
+    padding-left: 18px;
+    list-style: square;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.timeline-details li {
+    margin-bottom: 4px;
+}
+
+.timeline-details strong {
+    color: var(--text-main);
+}
+
 /* SVG Circuit Graphics & Animations */
 .about-graphic-container {
     display: flex;
@@ -816,32 +915,32 @@ img, svg {
     box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
 }
 
-.skill-badge[data-stack="frontend"]:hover::before {
+.skill-badge[data-stack="ai-ml"]:hover::before {
     background-color: var(--accent-cyan);
     box-shadow: var(--glow-cyan);
 }
 
-.skill-badge[data-stack="frontend"]:hover {
+.skill-badge[data-stack="ai-ml"]:hover {
     border-color: rgba(0, 242, 254, 0.3);
     box-shadow: 0 8px 30px -10px rgba(0, 242, 254, 0.15);
 }
 
-.skill-badge[data-stack="backend"]:hover::before {
+.skill-badge[data-stack="data-quant"]:hover::before {
     background-color: var(--accent-purple);
     box-shadow: var(--glow-purple);
 }
 
-.skill-badge[data-stack="backend"]:hover {
+.skill-badge[data-stack="data-quant"]:hover {
     border-color: rgba(112, 0, 255, 0.3);
     box-shadow: 0 8px 30px -10px rgba(112, 0, 255, 0.15);
 }
 
-.skill-badge[data-stack="tools"]:hover::before {
+.skill-badge[data-stack="tools-langs"]:hover::before {
     background-color: var(--accent-green);
     box-shadow: var(--glow-green);
 }
 
-.skill-badge[data-stack="tools"]:hover {
+.skill-badge[data-stack="tools-langs"]:hover {
     border-color: rgba(57, 255, 20, 0.3);
     box-shadow: 0 8px 30px -10px rgba(57, 255, 20, 0.15);
 }
