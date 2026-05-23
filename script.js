@@ -119,11 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const commands = {
         cmd1Text: 'cat about_me.md',
-        output1Text: `I am an AI/ML Engineer, Data Scientist, and Quantitative Analytics enthusiast. Currently pursuing an M.Sc. in Data Science at DIAT Pune, I specialize in building end-to-end ML pipelines, computer vision tracking models, and quantitative derivatives pricing frameworks.`,
-        cmd2Text: 'skills --top',
-        output2Text: `[ "PyTorch", "Scikit-Learn", "LangGraph", "YOLOv8", "ARIMA/Prophet", "Black-Scholes" ]`,
-        cmd3Text: 'python -c "from quantdesk import pricing; pricing.simulate_mc()"',
-        output3Text: `[i] Stabilizing implied volatility solver (Newton-Raphson + Bisection)...\n[+] Convergence reached in 4 iterations. Implied Volatility: 24.87%\n[+] Running 10,000 Monte Carlo paths for portfolio risk simulation...\n[+] Computation complete. VaR (95%): -1.84% | Expected Shortfall: -2.31%`
+        output1Text: `I model complex environments through spatial-temporal graphs, numerical optimization, and forecasting pipelines. I bridge the gap between AI theory, graph analytics, and quantitative risk engineering.`,
+        cmd2Text: 'python -c "import spatial_tracker; spatial_tracker.extract_stsg()"',
+        output2Text: `[i] Loading YOLOv8 weights and ByteTrack tracker...\n[i] Visual stream matched. Frame boundary: 1080p | Inference rate: 7.2 FPS\n[+] Tracking complete. Nodes: 8 | Spatial relations: [near, moving_towards]\n[+] Generated Spatial-Temporal Scene Graph (STSG) successfully.`,
+        cmd3Text: 'python -c "from geopolitical_alpha import risk; risk.score_fragility()"',
+        output3Text: `[i] Fetching GDELT news events and satellite activity anomalies...\n[i] Fusing signals. 42 lag-aware features aligned (look-ahead bias check: OK)\n[+] Geopolitical Fragility Score computed: 0.742 (disruption risk: HIGH)\n[+] Backtest complete. Sharpe Ratio: 1.84 | VaR (95%): -1.68%`
     };
 
     function typeWriter(element, text, speed, callback) {

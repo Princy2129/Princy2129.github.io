@@ -647,6 +647,101 @@ img, svg {
 .accent-purple { color: var(--accent-purple); text-shadow: 0 0 10px rgba(112, 0, 255, 0.2); }
 .accent-green { color: var(--accent-green); text-shadow: 0 0 10px rgba(57, 255, 20, 0.2); }
 
+/* Versatility Highlight Box Styling */
+.versatility-card {
+    background: rgba(11, 11, 18, 0.45);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    margin-top: 40px;
+    grid-column: span 2;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 242, 254, 0.02);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.v-card-header {
+    background: rgba(0, 242, 254, 0.03);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    letter-spacing: 0.5px;
+}
+
+.v-card-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-cyan);
+    filter: drop-shadow(var(--glow-cyan));
+}
+
+.v-card-body {
+    padding: 24px;
+}
+
+.v-intro {
+    font-size: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.v-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.v-item {
+    background: rgba(5, 5, 8, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 18px;
+    transition: var(--transition-smooth);
+}
+
+.v-item:hover {
+    border-color: rgba(0, 242, 254, 0.2);
+    background: rgba(11, 11, 18, 0.8);
+    transform: translateY(-2px);
+}
+
+.v-title {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.v-title i {
+    width: 14px;
+    height: 14px;
+}
+
+.v-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .v-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
 /* Internship timeline styles */
 .experience-block {
     margin-top: 60px;

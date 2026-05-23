@@ -1,21 +1,20 @@
-# 💻 Princy Verma's Tech-Visual Portfolio
+# 💻 Princy Verma's Rebranded Tech-Visual Portfolio
 
-A production-ready, ultra-lightweight portfolio website featuring a premium **"Tech Visual" (Cyberpunk/Engineer)** aesthetic. Built using pure **HTML5**, **CSS3**, and **vanilla JavaScript**, it is optimized for instant deployment to GitHub Pages.
+A recruiter-optimized, high-impact portfolio website showcasing engineering depth in **Spatial-Temporal Reasoning, Numerical Optimization, and Graph/Network Science**.
 
 ---
 
-## ✨ Features
+## ✨ Design Strategy & Layout
 
-- 📟 **Auto-Typing Terminal Hero:** A realistic terminal window that emulates a Python shell/bash console, typing out bios, diagnostics, and implied volatility computation simulation logs.
-- 📐 **Split Layout & Animated Circuit Graphic:** Clean modern typography alongside an interactive, animated circuit board SVG drawing.
-- 📜 **Interactive Internship Logs:** Interactive terminal logs showcasing internship achievements at NIT Calicut and Palanam Technology.
-- 🏷️ **Categorized Technical Arsenal:** Organized tech stack badges (AI & ML, Data Science & Quant, Tools & Languages) with color-specific hover glows.
-- 🃏 **Glassmorphic Project Cards:** Glowing glass panels highlighting core analytics projects:
-  - **Geo-Political Alpha:** Satellite and GDELT supply chain risk forecasting.
-  - **QuantDesk:** Option pricing, Greeks solver, and Monte Carlo Streamlit engine.
-  - **Surveillance Intelligence:** YOLOv8/ByteTrack video threat tracking.
-- 📡 **Ping Server Contact Form:** Clean, glassmorphic contact inputs with dynamic icon indicators and status logs.
-- 📱 **Fully Responsive:** Beautifully optimized across mobile devices, tablets, and high-DPI desktop viewports.
+- 📟 **Typewriter Shell Simulation:** Simulates Python automation, parsing news sentiment models, tracking spatial relation scene graphs, and logging Monte Carlo stress backtests on load.
+- 📐 **Unified About Me & Narrative:** Positions multi-disciplinary work as a cohesive representation challenge, showing adaptability across AI, finance, and network systems.
+- 🔀 **Versatility Highlight Card:** Directly highlights cross-pollination advantages (e.g., applying computer vision tracking thresholds to asset momentum).
+- 🏷️ **T-Shaped Skills Arsenal:** Organizes technical skills to emphasize primary mathematical verticals supported by versatile toolsets.
+- 🃏 **Competency-Framed Project Showcases:**
+  - **Geo-Political Supply Chain Risk:** Demonstrates alternative data pipeline architecture.
+  - **QuantDesk:** Demonstrates parallelized numerical solvers and Monte Carlo option pricing.
+  - **Surveillance Threat Pipeline:** Demonstrates spatial-temporal graph modeling.
+- 📡 **Ping Server Contact Form:** Clean, glassmorphic contact inputs with dynamic icon indicators.
 
 ---
 
@@ -39,13 +38,12 @@ Then open your browser and navigate to `http://localhost:3000`.
 
 ## 🌎 Deploying to GitHub Pages
 
-To update and push changes to GitHub Pages, execute the following commands in your workspace root:
+To push your latest rebranded updates live:
 
 ```bash
 git add .
-git commit -m "feat: customize portfolio with real AI/ML & Quant profile data"
+git commit -m "feat: rebrand portfolio copy for recruiter-oriented engineering depth"
 git push origin main
 ```
-
 Your live portfolio will automatically rebuild and update at:
 **`https://Princy2129.github.io/`**
